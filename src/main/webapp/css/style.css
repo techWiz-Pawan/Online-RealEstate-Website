@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+	padding: 0 10px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+	background: linear-gradient(to right, rgb(23, 3, 33), rgb(83, 12, 89));
+}
+
+.cmpy_name {
+	margin: 10px 0 0 0;
+	font-size: 50px;
+	color: rgb(140, 62, 64);
+}
+
+/* footer style */
+.footer {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(23, 3, 33);
+}
+
+.footer-up {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.footer-mid {
+	max-width: 400px;
+	text-align: justify;
+	color: white;
+}
+
+.footer-right {
+	max-width: 300px;
+	color: white;
+}
+
+.footer-left ul, .footer-right ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-left ul li, .footer-right ul li {
+	margin-bottom: 10px;
+}
+
+h5 {
+	font-size: 22px;
+	line-height: 1;
+	font-weight: bold;
+	color: #e6ca29;
+}
+
+p {
+	margin-top: 0;
+}
+
+.links, a {
+	text-decoration: none !important;
+}
+
+.social-Link:hover {
+	color: brown;
+}
+
+.footer-font {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-down {
+	color: rgb(149, 157, 157);
+	text-align: center;
+	padding: 3px 0 10px 0;
+}
+
+.icon-style {
+	font-size: 25px;
+}
+
+.footer-title {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.navbar {
+	z-index: 99999;
+	background-color: brown !important;
+	height: 85px;
+}
+
+#bg-video {
+	position: fixed;
+	object-fit: cover;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.signup-img {
+	position: relative;
+	top: 50px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-card {
+	width: 1150px;
+	height: 670px;
+	opacity: 1; /* Set opacity to 1 for full visibility */
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.custom-card input:focus {
+	border-color: rgb(28, 69, 2);
+	background-color: #ceef68;
+}
+
+:root {
+	--navbar-height: 80px;
+	/* Adjust this value if your navbar height is different */
+}
+
+.navbar {
+	z-index: 99999;
+	background-color: brown !important;
+	height: var(--navbar-height);
+}
+
+.c_img {
+	height: calc(100vh - var(--navbar-height));
+	object-fit: cover;
+}
+
+.navbar {
+	background: linear-gradient(to right, rgb(23, 3, 33), rgb(83, 12, 89));
+	/* Background gradient */
+	height: 80px;
+}
+
+.nav-link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-decoration: none;
+}
+
+.nav-link span {
+	font-size: 40px; /* Default icon size */
+	transition: font-size 0.3s ease; /* Smooth transition for icon size */
+	color: white;
+}
+
+.nav-link:hover span {
+	color: rgb(221, 255, 27);
+	font-size: 55px; /* Hover icon size */
+}
+
+.nav-link p {
+	margin: 0;
+	font-size: 18px; /* Adjust the text size if necessary */
+	color: red; /* Text color */
+}
+
+.navbar-nav .nav-item {
+	margin-left: 20px; /* Add space between nav items */
+}
+
+.breadcrumb .active {
+	color: rgb(83, 12, 50);
+	font-weight: bold;
+}
